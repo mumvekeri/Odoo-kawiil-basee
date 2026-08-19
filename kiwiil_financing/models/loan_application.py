@@ -34,7 +34,8 @@ class LoanApplication(models.Model):
 
     loan_amount = fields.Monetary(
         string='Loan Amount',
-        currency_field='currency_id'
+        currency_field='currency_id',
+        required=True
     )
 
     down_payment = fields.Monetary(
@@ -49,7 +50,8 @@ class LoanApplication(models.Model):
 
     interest_rate = fields.Float(
         string='Interest Rate',
-        digits=(5, 2)
+        digits=(5, 2),
+        required=True
     )
 
     date_applied = fields.Date(
@@ -68,7 +70,8 @@ class LoanApplication(models.Model):
             ('canceled', 'Canceled'),
         ],
         string='State',
-        default='draft'
+        default='draft',
+        copy=False
     )
 
     active = fields.Boolean(
@@ -76,5 +79,6 @@ class LoanApplication(models.Model):
     )
 
     notes = fields.Html(
-        string='Internal Notes'
+        string='Internal Notes',
+        copy=False
     )
