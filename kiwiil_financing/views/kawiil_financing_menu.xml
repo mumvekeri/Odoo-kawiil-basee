@@ -30,7 +30,7 @@
         id="menu_kawiil_financing_configuration"
         name="Configuration"
         parent="menu_kawiil_financing_root"
-        groups="kiwiil_financing.group_kawiil_financing_admin"
+        groups="kiwiil_financing.group_financing_admin"
         sequence="100"
     />
 
