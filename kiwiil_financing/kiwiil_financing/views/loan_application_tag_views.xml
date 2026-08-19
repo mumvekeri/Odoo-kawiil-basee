@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- Tags List View -->
     <record id="view_loan_application_tag_list" model="ir.ui.view">
         <field name="name">loan.application.tag.list</field>
         <field name="model">loan.application.tag</field>
@@ -13,7 +12,6 @@
         </field>
     </record>
 
-    <!-- Tags Action -->
     <record id="action_loan_application_tag" model="ir.actions.act_window">
         <field name="name">Tags</field>
         <field name="res_model">loan.application.tag</field>
