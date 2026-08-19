@@ -8,4 +8,7 @@
     'depends': ['product'],
     'license': 'OPL-1',
     'application': True,
+    'demo': [
+        'demo/loan_demo.xml',
+    ],
 }
