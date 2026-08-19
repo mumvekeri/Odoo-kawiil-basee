@@ -82,23 +82,14 @@ class LoanApplication(models.Model):
         string='Internal Notes',
         copy=False
     )
+
     tag_ids = fields.Many2many(
-    comodel_name='loan.application.tag',
-    string='Tags'
-)
+        comodel_name='loan.application.tag',
+        string='Tags'
+    )
 
-document_ids = fields.One2many(
-    comodel_name='loan.application.document',
-    inverse_name='application_id',
-    string='Documents'
-)
-tag_ids = fields.Many2many(
-    comodel_name='loan.application.tag',
-    string='Tags'
-)
-
-document_ids = fields.One2many(
-    comodel_name='loan.application.document',
-    inverse_name='application_id',
-    string='Documents'
-)
+    document_ids = fields.One2many(
+        comodel_name='loan.application.document',
+        inverse_name='application_id',
+        string='Documents'
+    )
