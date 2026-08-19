@@ -21,6 +21,7 @@
     ],
 
     'demo': [
+        'demo/config_demo.xml',
         'demo/loan_demo.xml',
     ],
 }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Tags -->
+    <record id="tag_vip" model="loan.application.tag">
+        <field name="name">VIP</field>
+        <field name="color">1</field>
+    </record>
+
+    <record id="tag_first_time_buyer" model="loan.application.tag">
+        <field name="name">First-Time Buyer</field>
+        <field name="color">2</field>
+    </record>
+
+    <!-- Document Types -->
+    <record id="document_type_proof_identity" model="loan.application.document.type">
+        <field name="name">Proof of Identity</field>
+        <field name="is_required">True</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="document_type_proof_income" model="loan.application.document.type">
+        <field name="name">Proof of Income</field>
+        <field name="is_required">True</field>
+        <field name="active">True</field>
+    </record>
+
+</odoo>
