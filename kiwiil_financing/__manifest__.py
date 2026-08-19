@@ -5,7 +5,7 @@
     'version': '1.0.0',
     'author': 'ODOP Trainee',
     'maintainer': 'Your Name',
-    'depends': ['base'],
+    'depends': ['product'],
     'license': 'OPL-1',
     'application': True,
 }
