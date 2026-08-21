@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Root Menu -->
+    <menuitem
+        id="menu_kawiil_financing_root"
+        name="Financing"
+        sequence="10"
+    />
+
+    <!-- Top Menu -->
+    <menuitem
+        id="menu_motorcycle_financing"
+        name="Motorcycle Financing"
+        parent="menu_kawiil_financing_root"
+        sequence="10"
+    />
+
+    <!-- Loan Applications -->
+    <menuitem
+        id="menu_loan_applications"
+        name="Loan Applications"
+        parent="menu_motorcycle_financing"
+        action="action_loan_application"
+        sequence="10"
+    />
+
+    <!-- Configuration -->
+    <menuitem
+        id="menu_kawiil_financing_configuration"
+        name="Configuration"
+        parent="menu_kawiil_financing_root"
+        groups="kiwiil_financing.group_financing_admin"
+        sequence="100"
+    />
+
+    <!-- Tags -->
+    <menuitem
+        id="menu_loan_application_tags"
+        name="Tags"
+        parent="menu_kawiil_financing_configuration"
+        action="action_loan_application_tag"
+        sequence="10"
+    />
+
+    <!-- Document Types -->
+    <menuitem
+        id="menu_loan_application_document_types"
+        name="Document Types"
+        parent="menu_kawiil_financing_configuration"
+        action="action_loan_application_document_type"
+        sequence="20"
+    />
+
+</odoo>
